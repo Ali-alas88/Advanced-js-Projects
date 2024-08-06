@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>QR-Code-Generator</title>
+
+</head>
+
+<body class="font-montserrat">
+  <main class="p-8">
+    <div
+      class="container mx-auto flex flex-col items-center justify-center gap-6  border border-slate-500 p-8 max-w-[800px]">
+      <input type="text" placeholder="Type text or use Url" id="inputValue"
+        class=" border-2 border-gray-800  w-[100%] max-w-[300px] p-2 text-xl">
+      <img src="" alt="" class="w-[100%] max-w-[400px]" id="qrImg">
+      <p id="errorMsg" class="text-xl text-red-700"></p>
+      <button type="submit" id="generateBtn"
+        class="bg-slate-700 text-white py-2 px-3 font-bold text-lg rounded-lg hover:bg-slate-200 hover:text-slate-900 transition-all duration-500 ease-in-out">Generate</button>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
